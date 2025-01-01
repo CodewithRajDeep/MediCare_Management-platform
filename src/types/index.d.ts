@@ -18,7 +18,7 @@ declare type MoleculeStructure = {
     email: string;
     fullname?: string;
     password: string;
-    photo: string;
+    photo?: string;
     firstName?: string;
     lastName?: string;
     userBio?: string;
