@@ -1,4 +1,4 @@
-const CopyPlugin = require("copy-webpack-plugin");
+import CopyPlugin from "copy-webpack-plugin";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -24,4 +24,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;

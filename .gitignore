@@ -11,6 +11,7 @@ oldpage
 /.next/
 /out/
 .env
+*.env
 /.env
 # production
 /build
