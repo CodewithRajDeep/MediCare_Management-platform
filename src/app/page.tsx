@@ -1,9 +1,11 @@
+import DefaultLayout from "@/components/Layouts/DefaultLayout";
+
 export default function Home() {
   return (
     <>
-      <div className="h-screen">
-        <p>Default Layout</p>
-      </div>
+      <DefaultLayout>
+        <p>Welcome to MediCare!</p>
+      </DefaultLayout>
     </>
   );
 }
