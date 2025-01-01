@@ -74,7 +74,7 @@ npm install
 
 ### **Set Up Environment Variables**
 
-Create a new file named `.env` in the root of your project and add the following:
+Create a new file named `.env` in the root of your project and add the following content:
 
 ```env
 NEXT_PUBLIC_NVIDIA_API_KEY=your-nvidia-api-key
