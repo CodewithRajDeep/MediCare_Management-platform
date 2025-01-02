@@ -21,7 +21,7 @@ const SignUp: React.FC = () => {
     password: "",
     confirmPassword: "",
     photo: "",
-    userBio: "",
+    userBio: " ",
   });
 
   const [imageFile, setImageFile] = useState<File | null>(null);
@@ -116,7 +116,7 @@ const SignUp: React.FC = () => {
         password: "",
         confirmPassword: "",
         photo: "",
-        userBio: "",
+        userBio: " ",
       });
       setImageFile(null);
       setIsLoading(false);
