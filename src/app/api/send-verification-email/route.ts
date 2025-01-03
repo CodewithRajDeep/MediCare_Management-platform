@@ -2,14 +2,14 @@
 import { VerifyEmailTemplate } from "@/components/EmailTemplate/verify-email";
 import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_KEY);
-
+const recipientEmail = process.env.RECIPIENT_EMAIL ?? " ";
 export async function POST(request: Request) {
   const { firstName, email, verificationUrl } = await request.json();
 
   try {
     const { data, error } = await resend.emails.send({
       from: "Medicare <onboarding@resend.dev>",
-      to: [email],
+      to: recipientEmail,//[email],
       subject: "Verify your email",
       react: VerifyEmailTemplate({ firstName, verificationUrl }),
     });
