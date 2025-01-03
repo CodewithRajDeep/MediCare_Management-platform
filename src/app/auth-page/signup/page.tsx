@@ -102,7 +102,7 @@ const SignUp: React.FC = () => {
 
       const newUser = {
         ...user,
-        photo: base64Image,
+        photo: imageFile ? base64Image : " ",
       };
 
       console.log(newUser);
@@ -115,7 +115,7 @@ const SignUp: React.FC = () => {
         lastName: "",
         password: "",
         confirmPassword: "",
-        photo: "",
+        photo:" ",
         userBio: " ",
       });
       setImageFile(null);
@@ -394,7 +394,7 @@ const SignUp: React.FC = () => {
                   </label>
                   <div className="relative">
                     <textarea
-                      name="bio"
+                      name="userBio"
                       value={user.userBio}
                       onChange={handleInputChange}
                       placeholder="Enter your bio"
