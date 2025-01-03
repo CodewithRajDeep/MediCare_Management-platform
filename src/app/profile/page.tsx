@@ -9,13 +9,13 @@ import { useEffect, useState } from "react";
 
 const Profile = () => {
   const user = useUser();
-  const [contributionCount, setContributionCount] = useState(200);
+  const [contributionCount, setContributionCount] = useState(50);
   useEffect(() => {
     const fetchContributions = async () => {
       try {
         const response = await fetch(`/api/contributions?userId=${user.id}`);
         const data = await response.json();
-        setContributionCount(data.count || 200);
+        setContributionCount(data.count || 50);
       } catch (error) {
         console.error("Error fetching contributions:", error);
       }
@@ -26,7 +26,7 @@ const Profile = () => {
     }
   }, [user]);
   const renderStars = (count: number) => {
-    const stars = Math.floor(count / 5); 
+    const stars = Math.floor(count / 20); 
     return Array.from({ length: stars }, (_, i) => (
       <span key={i} className="text-yellow-500">★</span>
     ));
@@ -42,7 +42,7 @@ const Profile = () => {
           <div className="relative z-20 h-35 md:h-65">
             <Image
               src={"/images/cover/cover-01.png"}
-              alt="profile cover"
+              alt="profile"
               className="h-full w-full rounded-tl-sm rounded-tr-sm object-cover object-center"
               width={970}
               height={260}
