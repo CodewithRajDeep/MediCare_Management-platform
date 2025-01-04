@@ -6,6 +6,7 @@ import React, { useEffect, useState } from "react";
 import { SessionProvider } from "next-auth/react";
 import { UserProvider } from "@/app/context/UserContext";
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -14,7 +15,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-          <script src="https://unpkg.com/@rdkit/rdkit/dist/RDKit_minimal.js"></script>
+      <script src="/node_modules/@rdkit/rdkit/dist/RDKit_minimal.wasm"></script>
       <body suppressHydrationWarning={true}>
         <SessionProvider>
           <UserProvider>
