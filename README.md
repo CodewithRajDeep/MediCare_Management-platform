@@ -25,7 +25,7 @@
 
 ## <a name="introduction">🤖 Introduction</a>
 
-**MediCare** is a research discovery and  prediction tool built with the latest in machine learning and natural language processing (NLP) technology. Powered by NVIDIA NIM and molecule structure prediction models, this project enables users to simulate molecular interactions and predict protein structures.
+**MediCare** is a research discovery and  prediction tool built with the latest in machine learning and natural language processing (NLP) technology. Powered by NVIDIA NIM and molecule structure prediction models, this project enables users to simulate molecular interactions and predict molecule structures.
 
 The platform is designed to help researchers accelerate drug discovery by leveraging cutting-edge AI models for protein folding, docking, and molecular dynamics.
 
