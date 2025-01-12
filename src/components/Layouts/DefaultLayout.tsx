@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import {useState, useLayoutEffect} from "react";
 import Sidebar from "../Sidebar";
 import Header from "../Header";
@@ -14,6 +13,7 @@ children,
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const router = useRouter();
     const pathname = usePathname();
+    const { status } = useSession(); 
     const publicRoutes = [
         "/auth-page/signin",
         "/auth-page/signup",

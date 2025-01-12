@@ -15,7 +15,9 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
       <script src="/node_modules/@rdkit/rdkit/dist/RDKit_minimal.wasm"></script>
+      </head>
       <body suppressHydrationWarning={true}>
         <SessionProvider>
           <UserProvider>

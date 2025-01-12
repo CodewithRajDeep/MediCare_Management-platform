@@ -12,7 +12,10 @@ export async function createMoleculeGenerationHistory(
 ) {
   try {
     await connectToDatabase();
-
+    
+    if (!mongoose.Types.ObjectId.isValid(userId)) {
+      throw new Error("Invalid user ID");
+    }
     const newHistoryEntry = await MoleculeGenerationHistory.create({
       ...payload,
       user: new mongoose.Types.ObjectId(userId),
