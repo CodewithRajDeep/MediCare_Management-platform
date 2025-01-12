@@ -25,7 +25,7 @@
 
 ## <a name="introduction">🤖 Introduction</a>
 
-**MediCare** is a research discovery and  prediction tool built with the latest in machine learning and natural language processing (NLP) technology. Powered by NVIDIA NIM and protein structure prediction models, this project enables users to simulate molecular interactions and predict protein structures.
+**MediCare** is a research discovery and  prediction tool built with the latest in machine learning and natural language processing (NLP) technology. Powered by NVIDIA NIM and molecule structure prediction models, this project enables users to simulate molecular interactions and predict molecule structures.
 
 The platform is designed to help researchers accelerate drug discovery by leveraging cutting-edge AI models for protein folding, docking, and molecular dynamics.
 
@@ -98,13 +98,13 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 ## <a name="molecule-data">🧬 Molecule Data Processing</a>
 
-This section covers the protein data processing pipeline, including loading protein structure files (e.g., PDB format), performing molecular docking simulations, and visualizing the results.
+This section covers the protein data processing pipeline, including loading protein structure files (e.g., PDB format), performing molecular docking simulations, and visualizing the result.
 
 ### **Molecule Structure Input**
 
-Users can upload PDB files for protein structures, which will then be processed by NVIDIA NeMo's protein-folding models.
+Users can upload PDB files for molecule structures, which will then be processed by NVIDIA NeMo's molecule-folding models.
 
 ### **Docking Simulation**
 
-Using molecular docking algorithms, the system predicts how small molecules (such as drug candidates) bind to protein targets.
+Using molecular docking algorithms, the system predicts how small molecules (such as drug candidates) bind to molecule target.
 
