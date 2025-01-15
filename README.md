@@ -102,7 +102,7 @@ This section covers the protein data processing pipeline, including loading prot
 
 ### **Molecule Structure Input**
 
-Users can upload PDB files for molecule structures, which will then be processed by NVIDIA NeMo's molecule-folding models.
+Users can upload PDB files for molecule structures, which will then be processed by NVIDIA NeMo's molecule-folding model.
 
 ### **Docking Simulation**
 
