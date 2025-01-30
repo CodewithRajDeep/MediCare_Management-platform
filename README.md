@@ -106,5 +106,5 @@ Users can upload PDB files for molecule structures, which will then be processed
 
 ### **Docking Simulation**
 
-Using molecular docking algorithms, the system predicts how small molecules (such as drug candidates) bind to molecule target.
+Using molecular docking algorithms, the system predicts how small molecule (such as drug candidates) bind to molecule target.
 
