@@ -98,7 +98,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 ## <a name="molecule-data">🧬 Molecule Data Processing</a>
 
-This section covers the protein data processing pipeline, including loading protein structure files (e.g., PDB format), performing molecular docking simulations, and visualizing the result.
+This section covers the protein data processing pipeline, including loading protein structure file (e.g., PDB format), performing molecular docking simulations, and visualizing the result.
 
 ### **Molecule Structure Input**
 
