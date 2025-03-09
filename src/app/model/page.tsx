@@ -47,10 +47,11 @@ const ModalLayout = () => {
     e.preventDefault();
     setLoading(true);
 
-    const API_KEY = process.env.NEXT_API_KEY;
+    const API_KEY =
+      "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";
 
-    const invokeUrl = process.env.NEXT_INVOKE_URL || 
-      "https://build.nvidia.com/nvidia/molmim-generate";
+    const invokeUrl =
+      'https://health.api.nvidia.com/v1/biology/nvidia/molmim/generate';
 
     const payload = {
       algorithm: "CMA-ES",
@@ -64,7 +65,7 @@ const ModalLayout = () => {
     };
 
     try {
-      const response = await fetch(invokeUrl, {
+      const response = await fetch("/api/proxy/generate", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${API_KEY}`,
