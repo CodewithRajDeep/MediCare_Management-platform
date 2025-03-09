@@ -98,13 +98,13 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 ## <a name="molecule-data">🧬 Molecule Data Processing</a>
 
-This section covers the protein data processing pipeline, including loading protein structure files (e.g., PDB format), performing molecular docking simulations, and visualizing the result.
+This section covers the protein data processing pipeline, including loading protein structure file (e.g., PDB format), performing molecular docking simulations, and visualizing the result.
 
 ### **Molecule Structure Input**
 
-Users can upload PDB files for molecule structures, which will then be processed by NVIDIA NeMo's molecule-folding models.
+Users can upload PDB files for molecules structures, which will then be processed by NVIDIA NeMo's molecule-folding model.
 
 ### **Docking Simulation**
 
-Using molecular docking algorithms, the system predicts how small molecules (such as drug candidates) bind to molecule target.
+Using molecular docking algorithms, the system predicts how small molecule (such as drug candidates) bind to molecule target.
 
