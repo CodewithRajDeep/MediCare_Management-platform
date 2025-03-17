@@ -16,7 +16,7 @@
 8. [📜 License](#license)
 9. [📬 Contact](#contact)
 
-### <a name="description"> 🔬 About MediCare: </a>
+## <a name="description"> 🔬 About MediCare: </a>
 MediCare is an open-source platform designed to facilitate drug discovery and molecular research. It provides a Molecule Bank where researchers can visualize compounds using SMILE technology, a Records Section storing essential chemical data, and a real-time communication space for researchers to collaborate.
 Mainly for: 
 ✅ Researchers in pharmaceuticals & drug discovery
@@ -24,14 +24,14 @@ Mainly for:
 ✅ Contributors interested in computational chemistry
 ✅ Open-source enthusiasts in healthcare & chemistry
 
-### <a name="features"> 🛠 Features </a>
+## <a name="features"> 🛠 Features: </a>
  -  🧪 Molecule Bank – Visualize chemical compounds using SMILE technology.
  -  📑 Comprehensive Compound Records – Access compound name, weight, structure, and chemical properties.
  -  💬 Live Chat & Group Meetings – Collaborate with other researchers in real time.
  -  🔍 Advanced Search – Find molecules by name, weight, or structure.
  -  🔗 Open Contribution – Researchers can add, edit, and validate molecular data.
 
-### <a name="screenshots"> 📸 Screenshots: </a>
+## <a name="screenshots"> 📸 Screenshots: </a>
 
  ## Dashboard: 
   ![image](https://github.com/user-attachments/assets/e3d5171f-41a1-4e54-88ba-1fd815b412b3)
@@ -46,7 +46,7 @@ Mainly for:
    ![image](https://github.com/user-attachments/assets/eea720d6-51c5-4d95-9b02-5a0af94d950b)
  
 
-### <a name="techstack"> 🚀 Tech Stack: </a>
+## <a name="techstack"> 🚀 Tech Stack: </a>
      
   <div>
     <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="nodejs" />
@@ -112,13 +112,13 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
 ```
 
-### <a name="usage"> 🔧 Usage: </a> 
+## <a name="usage"> 🔧 Usage: </a> 
 1️⃣ Browse & Search for molecules using SMILE-based visualization.
 2️⃣ Access Chemical Records – Get compound properties like weight, structure, and name.
 3️⃣ Collaborate in Real-time – Join live chat rooms & meetings with other researchers.
 4️⃣ Contribute New Compounds – Add and validate new molecular data.
 
-### <a name="contribution"> 🤝 Contributing:  </a>
+## <a name="contribution"> 🤝 Contributing:  </a>
   🔬 Contributions are highly encouraged! If you're a researcher, educator, or developer, feel free to improve MediCare.
 ```
 Fork the repository.
@@ -141,7 +141,7 @@ Fork the repository: Create a fork of the project on your GitHub account. Create
 
 Write unit tests for any new features or bug fixes. Ensure existing tests pass after your changes.
 
-### <a name="license"> 📜 License: </a> 
+## <a name="license"> 📜 License: </a> 
  
  MediCare is licensed under the MIT License – open for research and educational purposes.
 
@@ -160,7 +160,7 @@ Using molecular docking algorithms, the system predicts how small molecules (suc
 🚀 Let's revolutionize drug discovery together! 🌍💊
 
 
-### <a name="contact"> 📬 Contact: </a>
+## <a name="contact"> 📬 Contact: </a>
 
 🔗 GitHub: CodeWithRajDeep
 
