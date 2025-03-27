@@ -58,10 +58,58 @@ const moleculeBank = [
     categoryUsage: "Stimulant",
   },
   {
+    "moleculeName": "Paracetamol",
+    "smilesStructure": "CC(=O)NC1=CC=C(C=C1)O",
+    "molecularWeight": 151.16,
+    "categoryUsage": "Analgesic/Antipyretic",
+  },
+  {
     moleculeName: "Ethanol",
     smilesStructure: "CCO",
     molecularWeight: 46.07,
     categoryUsage: "Alcohol/Disinfectant",
+  },
+  {
+    "moleculeName": "Serotonin",
+    "smilesStructure": "CN[C@H]1C=C2C(=O)NCC2=CC1",
+    "molecularWeight": 176.22,
+    "categoryUsage": "Neurotransmitter/Mood Regulator",
+  },
+  {
+    "moleculeName": "Lactic Acid",
+    "smilesStructure": "CC(C(=O)O)O",
+    "molecularWeight": 90.08,
+    "categoryUsage": "Energy Metabolism/Food Preservative",
+  },
+  {
+    "moleculeName": "Cholesterol",
+    "smilesStructure": "C[C@H](CCC(C)C1CCC2C3C(CC=C4C2(C(CCC4)O)C)C(C3)CC1)O",
+    "molecularWeight": 386.65,
+    "categoryUsage": "Steroid/Lipid Metabolism",
+  },
+  {
+    "moleculeName": "Ammonia",
+    "smilesStructure": "N",
+    "molecularWeight": 17.03,
+    "categoryUsage": "Fertilizer/Industrial Chemical",
+  },
+  {
+    "moleculeName": "Hydrochloric Acid",
+    "smilesStructure": "[H]Cl",
+    "molecularWeight": 36.46,
+    "categoryUsage": "Chemical Reagent/Industrial Acid",
+  },
+  {
+    "moleculeName": "Sulfuric Acid",
+    "smilesStructure": "OS(=O)(=O)O",
+    "molecularWeight": 98.08,
+    "categoryUsage": "Industrial Acid/Catalyst",
+  },
+  {
+    "moleculeName": "Formaldehyde",
+    "smilesStructure": "C=O",
+    "molecularWeight": 30.03,
+    "categoryUsage": "Preservative/Disinfectant",
   },
 ];
 
