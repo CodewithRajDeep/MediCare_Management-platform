@@ -1,22 +1,23 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextRequest, NextResponse } from 'next/server';
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  const { userId } = req.query;
+export async function GET(req: NextRequest) {
+  const { searchParams } = new URL(req.url);
+  const userId = searchParams.get('userId');
 
   if (!userId) {
-    return res.status(400).json({ error: "User ID is required" });
+    return NextResponse.json({ error: "User ID is required" }, { status: 400 });
   }
 
   try {
-    
-    const contributionCount = await getContributionCount(userId as string);
-    res.status(200).json({ count: contributionCount });
+    const contributionCount = await getContributionCount(userId);
+    return NextResponse.json({ count: contributionCount });
   } catch (error) {
     console.error("Error fetching contributions:", error);
-    res.status(500).json({ error: "Failed to fetch contributions" });
+    return NextResponse.json({ error: "Failed to fetch contributions" }, { status: 500 });
   }
 }
 
 async function getContributionCount(userId: string): Promise<number> {
+  
   return 259;
 }
