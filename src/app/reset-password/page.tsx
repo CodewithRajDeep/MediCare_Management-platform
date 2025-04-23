@@ -1,11 +1,13 @@
 "use client";
-import React, { useState } from "react";
+
+import React, { useState, Suspense } from "react"; // Import Suspense
 import Link from "next/link";
 import { LoaderCircle, LockIcon } from "lucide-react";
 import DefaultLayout from "@/components/Layouts/DefaultLayout";
 import Breadcrumb from "@/components/ComponentHeader/ComponentHeader";
 import { useRouter, useSearchParams } from "next/navigation";
 import { resetPassword } from "@/lib/actions/user.action";
+
 
 const ResetPasswordPage: React.FC = () => {
   const [password, setPassword] = useState("");
@@ -141,4 +143,11 @@ const ResetPasswordPage: React.FC = () => {
   );
 };
 
-export default ResetPasswordPage;
+
+const ResetPasswordPageWithSuspense = () => (
+  <Suspense fallback={<p>Loading...</p>}>
+    <ResetPasswordPage />
+  </Suspense>
+);
+
+export default ResetPasswordPageWithSuspense;
