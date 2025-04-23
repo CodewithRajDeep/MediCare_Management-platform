@@ -1,8 +1,9 @@
-import NextAuth from "next-auth";
+import NextAuth, { SessionStrategy } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { loginUser } from "@/lib/actions/user.action";
 
-export const handler = NextAuth({
+
+const authOptions = {
   providers: [
     CredentialsProvider({
       name: "Credentials",
@@ -15,17 +16,14 @@ export const handler = NextAuth({
           const user = await loginUser(credentials.email, credentials.password);
           if (user) {
             return user;
-          } else {
-            return null;
           }
         }
-
         return null;
       },
     }),
   ],
   session: {
-    strategy: "jwt",
+    strategy: "jwt" as SessionStrategy,
     maxAge: 24 * 60 * 60,
   },
   callbacks: {
@@ -43,6 +41,7 @@ export const handler = NextAuth({
     },
   },
   secret: process.env.NEXTAUTH_SECRET,
-});
+};
 
+const handler = NextAuth(authOptions);
 export { handler as GET, handler as POST };
