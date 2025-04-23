@@ -1,15 +1,13 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react"; // Import Suspense
 import { useRouter, useSearchParams } from "next/navigation";
 import { verifyEmail } from "@/lib/actions/user.action";
 import DefaultLayout from "@/components/Layouts/DefaultLayout";
 import { CircleCheckBig } from "lucide-react";
 
 const VerifyEmailPage: React.FC = () => {
-  const [status, setStatus] = useState<"loading" | "success" | "error">(
-    "loading",
-  );
+  const [status, setStatus] = useState<"loading" | "success" | "error">("loading");
   const searchParams = useSearchParams();
   const token = searchParams.get("token");
   const router = useRouter();
@@ -34,7 +32,7 @@ const VerifyEmailPage: React.FC = () => {
 
   return (
     <DefaultLayout>
-      <div className="mt-20 h-screen  text-center">
+      <div className="mt-20 h-screen text-center">
         <span className="mt-15 inline-block">
           <CircleCheckBig size={60} />
         </span>
@@ -58,4 +56,11 @@ const VerifyEmailPage: React.FC = () => {
   );
 };
 
-export default VerifyEmailPage;
+
+const VerifyEmailPageWithSuspense = () => (
+  <Suspense fallback={<p>Loading...</p>}>
+    <VerifyEmailPage />
+  </Suspense>
+);
+
+export default VerifyEmailPageWithSuspense;
