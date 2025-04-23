@@ -3,7 +3,7 @@
   
    
 ### ♠️ Purpose: 
- Empowering researchers, educators, and contributors in the field of drug discovery through molecular visualization, real-time collaboration, and data-driven insight.
+ Empowering researchers, educators, and contributors in the field of drug discovery through molecular visualization, real-time collaboration, and data-driven insights.
 
 ### 📖 Table of Contents: 
 1. [🔬 About MediCare](#description)
