@@ -19,7 +19,7 @@ const ChartThree: React.FC = () => {
       <div className="mb-2">
         <div id="chartThree" className="mx-auto flex justify-center">
           <div className="flex items-start gap-2.5">
-            <img className="h-8 w-8 rounded-full" src="/images/user/user-03.jpg" 
+            <img className="h-8 w-8 rounded-full" src="/images/user/user-03.jpg"
               alt="image"/>
 
             <div className="leading-1.5 border-gray-200 dark:bg-gray-700 flex w-full max-w-[320px] flex-col rounded-e-xl rounded-es-xl bg-[#f3f4f6] p-4">
