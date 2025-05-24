@@ -164,7 +164,6 @@ Using molecular docking algorithms, the system predicts how small molecules (suc
 
 🔗 GitHub: CodeWithRajDeep
 
-🌐 Website: https://deepraj-cv.netlify.app
-
+🌐 Website: https://deepraj-portfolio-red.vercel.app
 
 
